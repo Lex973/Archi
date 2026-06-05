@@ -3,7 +3,7 @@ import {Box, Paper, Typography, useTheme} from "@mui/material";
 
 const TrendingVolume = ({volume}: {volume: number | undefined}) => {
     const theme = useTheme()
-
+    console.log(volume?.toLocaleString('en-US', { maximumFractionDigits: 0 }))
     return (
         <Paper sx={{ px: 2, py: 2, borderRadius: 4, boxShadow: 'none', border: '1px solid rgba(17, 24, 39, 0.08)', height: '49%' }}>
             <Typography sx={{fontWeight: 'bold', mb: 2}} variant='h4'>

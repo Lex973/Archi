@@ -1,10 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {fetchApi} from "./cryptoApiSlice.ts";
-import {fetchApiNews} from "./newsApiSlice.ts";
-import {newsSlice} from "./newsSlice.ts";
-import coinsReducer from './coinsSlice.ts'
-import {converterSlice} from "./converterSlice.ts";
-import {appSlice} from './AppSlice.ts'
+import {fetchApi} from "./cryptoApiSlice";
+import {fetchApiNews} from "./newsApiSlice";
+import {newsSlice} from "./newsSlice";
+import coinsReducer from './coinsSlice'
+import {converterSlice} from "./converterSlice";
+import {appSlice} from './AppSlice'
 
 export const store = configureStore({
     reducer: {

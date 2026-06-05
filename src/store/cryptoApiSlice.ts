@@ -1,5 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import type {globalMarketStatisticsResponse, trendingCoinsResponse, CoinsData, TopGainersResponse} from "../types.ts";
+import type {globalMarketStatisticsResponse, trendingCoinsResponse, CoinsData, TopGainersResponse} from "../types";
 
 // получение крипты
 

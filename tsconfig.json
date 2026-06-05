@@ -5,6 +5,9 @@
     { "path": "./tsconfig.node.json"}
   ],
   "compilerOptions": {
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["jest", "@testing-library/jest-dom"],
+    "jsx": "react-jsx",
+    "lib": ["es2016", "dom"]
   }
 }

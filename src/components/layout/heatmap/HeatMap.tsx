@@ -1,9 +1,9 @@
 import {Container, Paper, Typography, useTheme, Box} from "@mui/material";
 import {Treemap, ResponsiveContainer} from "recharts";
-import useHeatMapData from "../../../hooks/useHeatMapData.ts";
-import Tooltip from "../../heatmapTooltip/Tooltip.tsx";
+import useHeatMapData from "../../../hooks/useHeatMapData";
+import Tooltip from "../../heatmapTooltip/Tooltip";
 import {useState} from "react";
-import type {CustomContentProps} from "../../../types.ts";
+import type {CustomContentProps} from "../../../types";
 
 const HeatMap = () => {
     const theme = useTheme()
@@ -38,7 +38,7 @@ const HeatMap = () => {
         if (showTooltip) setShowTooltip(false)
     }
     return (
-        <Container maxWidth='xl' disableGutters sx={{ mt: 5 }}>
+        <Container data-testid="heatmap-container" maxWidth='xl' disableGutters sx={{ mt: 5 }}>
             <Paper sx={{px: 3, py: 3, borderRadius: 2, backgroundColor: 'white',}}>
                 <Typography variant='h5' sx={{fontWeight: 'bold'}}>
                     Market heatmap

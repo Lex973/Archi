@@ -1,4 +1,4 @@
-import {useGetTopGainersQuery} from "../store/cryptoApiSlice.ts";
+import {useGetTopGainersQuery} from "../store/cryptoApiSlice";
 import {useMemo} from "react";
 
 const UseHeatMapData = () => {

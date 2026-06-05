@@ -40,7 +40,6 @@ export const bubbleSortWithDoubleArray = function (arr: [string, number][]) {
     return arr
 }
 
-
 export const formatDate = function (date: string) {
     const NewDate = new Date(date)
     const time = date.split('T')[1].slice(0, 5)

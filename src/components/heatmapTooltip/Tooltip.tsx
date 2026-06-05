@@ -1,5 +1,5 @@
 import {Paper, Typography, Box} from "@mui/material";
-import {formatMarketCap} from "../../utils/utilsFunc.ts";
+import {formatMarketCap} from "../../utils/utilsFunc";
 
 type pos = {
     x: number;
@@ -26,6 +26,7 @@ const CoinTooltip = ({position, hoverElementData}: TooltipProps) => {
     if (!hoverElementData.image) return null;
     return (
         <Paper
+            data-testid="tooltip"
             elevation={0}
             sx={{
                 transition: 'top 0.2s ease, left 0.2s ease',
