@@ -24,7 +24,7 @@ const defaultOrbs: GlowOrb[] = [
 
 const AnimatedGlowBackground = ({ orbs = defaultOrbs, children }: AnimatedGlowBackgroundProps) => {
     return (
-        <Box sx={{ position: "relative",                         display: "flex",
+        <Box sx={{ position: "relative", display: "flex",
             alignItems: "center",
             justifyContent: "center",overflow: "hidden", width: "100%", minHeight: 'calc(100vh - 115px)', background: "rgba(248, 252, 248, 1)" }}>
             {orbs.map((orb, i) => (
